@@ -1,0 +1,107 @@
+{
+    "dir": "ltr",
+    "lang": "Portuguese",
+    "name": "League of Duos",
+    "scope": "/",
+    "display": "fullscreen",
+    "start_url": "https://league-of-duos.firebaseapp.com/",
+    "short_name": "LOD",
+    "theme_color": "transparent",
+    "description": "App to make friends and lovers that plays League of Legends",
+    "orientation": "portrait",
+    "background_color": "transparent",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "assets/images/7c92a37e-ad0c-c724-fd56-75c1b40f4b45.webPlatform.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/windows10/SplashScreen.scale-200.png.png",
+            "sizes": "1240x600",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/7799b0bb-33f5-ac46-5bef-fc136d00ccc4.webPlatform.png",
+            "sizes": "300x300",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/6664a2ae-3efe-10a2-f87c-7339933468b5.webPlatform.png",
+            "sizes": "150x150",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/14c13f20-741f-6416-382f-c5723f07314b.webPlatform.png",
+            "sizes": "88x88",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/c4fb2c5a-e80d-08c2-6005-ac4841737f7a.webPlatform.png",
+            "sizes": "24x24",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/fb779ab9-dfe9-e2df-08d0-020b29cb2671.webPlatform.png",
+            "sizes": "50x50",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/706e8bac-2083-b78d-5ee8-c4fe22c661ef.webPlatform.png",
+            "sizes": "620x300",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/f905a6d9-26e4-e007-0750-98a0904e9ae1.webPlatform.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/591a91c6-ead7-8f21-1cbc-bf8b19c197f7.webPlatform.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/692fc371-a877-bad0-a0f4-50eabfdc0dc1.webPlatform.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/52ab9053-c1c7-a669-8e5c-fc014ef60bd4.webPlatform.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/3296d770-a3e1-2a89-ae42-a8cdedb02259.webPlatform.png",
+            "sizes": "36x36",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/ios/ios-appicon-1024-1024.png",
+            "sizes": "1024x1024",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/baea86fd-a063-326c-8d14-8d9c6f28b861.webPlatform.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/657a11b8-adb2-fc0e-9a80-9a6f839a5867.webPlatform.png",
+            "sizes": "152x152",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/1fdb421a-0954-9e29-7439-03d95030d9cd.webPlatform.png",
+            "sizes": "120x120",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/68e4505a-fd88-2441-2342-516f7dd8c574.webPlatform.png",
+            "sizes": "76x76",
+            "type": "image/png"
+        }
+    ]
+}

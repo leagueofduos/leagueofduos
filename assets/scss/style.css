@@ -399,16 +399,6 @@ footer p a {
   }
 }
 
-.grid li {
-  padding: 20px;
-  height: 350px;
-  border-radius: 3px;
-  background-clip: content-box;
-  background-size: cover;
-  background-position: center;
-  background-color: #333;
-}
-
 .page-main, .page-left, .page-right {
   float: left;
   flex-basis: 100%;
@@ -430,9 +420,23 @@ footer p a {
   height: 10vh !important;
   flex-grow: 1 !important;
   background-color: darkorchid !important;
+  background-size: cover !important;
+  background-position: center !important;
   margin: 0 !important;
   border-radius: 0 !important;
   color: white;
+}
+
+.pagination-btn-config {
+  background-image: url("../img/hero.jpg") !important;
+}
+
+.pagination-btn-main {
+  background-image: url("../img/coast.jpg") !important;
+}
+
+.pagination-btn-match {
+  background-image: url("../img/balloon.jpg") !important;
 }
 
 .pagination-group {

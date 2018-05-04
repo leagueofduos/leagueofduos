@@ -9,10 +9,8 @@
 <!-- initialize the SDK after all desired features are loaded -->
 <script defer src="/__/firebase/init.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
-
-<script src="assets/scripts/jquery-3.3.1.min.js"></script>
+<script src="assets/scripts/jquery-3.3.1.min.js"></script>    
 <script src="assets/scripts/swiper/dist/js/swiper.min.js"></script>
-<script src="assets/scripts/manup.min.js"></script>
 <script>
     // Initialize Firebase
     var config = {
@@ -31,7 +29,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>League of Duos</title>
-    <link rel="manifest" href="manifest.json"></link>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="assets/scss/style.css">
@@ -46,7 +43,6 @@
             <div class="page-main swiper-slide" id="div-principal"></div>
             <div class="page-right swiper-slide" id="div-matches"></div>
         </div>
-        <div class="pagination-group swiper-pagination"></div>
     </div>
 
     <!-- importação de scripts e scripts próprios -->
@@ -58,27 +54,7 @@
         var mySwiper = new Swiper('.swiper-container', {
             // Optional parameters
             direction: 'horizontal',
-            initialSlide: 1,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-                renderBullet: function (index, className) {
-                    switch (index) {
-                        case 0:
-                            return '<div class="pagination-btn pagination-btn-config ' + className + '">' + "Config" + '</div>';
-                            break;
-                        case 1:
-                            return '<div class="pagination-btn pagination-btn-main ' + className + '">' + "Jogo" + '</div>';
-                            break;
-                        case 2:
-                            return '<div class="pagination-btn pagination-btn-match ' + className + '">' + "Match" + '</div>';
-                            break;
-                        default:
-                            break;
-                    }
-                    //return '<span class="' + className + '">' + (index + 1) + '</span>';
-                },
-            },
+            loop: false
         })
     </script>
 </body>
