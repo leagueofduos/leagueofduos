@@ -425,4 +425,21 @@ footer p a {
 .page-right {
   background-color: #414a4f;
 }
+
+.pagination-btn {
+  height: 10vh !important;
+  flex-grow: 1 !important;
+  background-color: darkorchid !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  color: white;
+}
+
+.pagination-group {
+  min-width: 100vw !important;
+  display: flex !important;
+  bottom: 0 !important;
+  position: absolute !important;
+  justify-content: space-between !important;
+}
 /*# sourceMappingURL=style.css.map */
