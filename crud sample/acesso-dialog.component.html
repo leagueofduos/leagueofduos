@@ -1,0 +1,44 @@
+<form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+
+    <div class="modal-header">
+        <h4 class="modal-title" id="myAcessoLabel" jhiTranslate="cpbFrontApp.acesso.home.createOrEditLabel">Create or edit a Acesso</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                (click)="clear()">&times;</button>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" [hidden]="!acesso.id">
+            <label for="id" jhiTranslate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                   [(ngModel)]="acesso.id" readonly />
+        </div>
+        <div class="form-group md-checkbox">
+            <input type="checkbox"  name="flAtivo" id="field_flAtivo"
+                [(ngModel)]="acesso.flAtivo" />
+                <label  jhiTranslate="cpbFrontApp.acesso.flAtivo" for="field_flAtivo">Fl Ativo</label>
+        </div>
+
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="cpbFrontApp.acesso.grupoAcesso" for="field_grupoAcesso">Grupo Acesso</label>
+            <select class="form-control" id="field_grupoAcesso" name="grupoAcesso" [(ngModel)]="acesso.grupoAcessoId" >
+                <option [ngValue]="null"></option>
+                <option [ngValue]="grupoAcessoOption.id" *ngFor="let grupoAcessoOption of grupoacessos; trackBy: trackGrupoAcessoById">{{grupoAcessoOption.id}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="cpbFrontApp.acesso.usuario" for="field_usuario">Usuario</label>
+            <select class="form-control" id="field_usuario" name="usuario" [(ngModel)]="acesso.usuarioId" >
+                <option [ngValue]="null"></option>
+                <option [ngValue]="usuarioOption.id" *ngFor="let usuarioOption of usuarios; trackBy: trackUsuarioById">{{usuarioOption.id}}</option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="clear()">
+            <span class="fa fa-ban"></span>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+            <span class="fa fa-save"></span>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>
